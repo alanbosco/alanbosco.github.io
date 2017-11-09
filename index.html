@@ -1,12 +1,70 @@
 <!DOCTYPE html>
 <html>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-	<title>Alan Bosco</title>
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Istok+Web" />
-	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Coustard" />
+    <title>alan.js</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-<h1 style="font-family: "Istok Web";font-weight: 500;">Welcome, This is my page. and yeh I am alan.</h1>
-<h4 style="">Site is very much under construction!! <br> But you can follow me on <a href="fb.com/iamalanbosco">Facebook</a> or <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">here</a>.</h4>
+    <div class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">let</span> <span class="nx">me</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Alan&#39;</span><span class="p">,</span>
+    <span class="nx">lastname</span><span class="o">:</span> <span class="s1">&#39;Bosco&#39;</span><span class="p">,</span>
+    <span class="nx">nationality</span><span class="o">:</span> <span class="s1">&#39;India&#39;</span>
+<span class="p">};</span>
+
+<span class="kd">let</span> <span class="nx">currentPosition</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">as</span><span class="o">:</span> <span class="s1">&#39;Freelancer&#39;</span><span class="p">,</span>
+    <!-- <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;https://www.fiverr.com&#39;</span><span class="p">,</span> --><span class="nx">role</span><span class="o">:</span> <span class="s1">&#39;Web Developer&#39;</span>
+<span class="p">};</span>
+
+<span class="kd">let</span> <span class="nx">profiles</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="nx">github</span><span class="o">:</span> <span class="s1">&#39;https://github.com/alanbosco&#39;</span><span class="p">,</span>
+    <span class="nx">facebook</span><span class="o">:</span> <span class="s1">&#39;https://www.facebook.com/iamalanbosco&#39;</span><span class="p">,</span>
+    <span class="nx">Linkedin</span><span class="o">:</span> <span class="s1">&#39;https://www.linkedin.com/in/alanbosco15&#39;</span>
+<span class="p">};</span>
+<!-- <span class="kd">let</span> <span class="nx">blog</span> <span class="o">=</span> <span class="s1">&#39;http://alan.me/blog/&#39;</span><span class="p">;</span> -->
+<span class="c1">// Side projects</span>
+<span class="kd">let</span> <span class="nx">sideProjects</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Leaders Conclave Web&#39;</span><span class="p">,</span>
+        <span class="nx">site</span><span class="o">:</span> <span class="s1">&#39;https://leadersconclave.in&#39;</span><span class="p">,</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="p"></span><span class="s1">&#39;Website for Leaders Conclave 2017 by ICET.&#39;</span><span class="p">,</span>
+        <span class="nx">roles</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Devloper&#39;</span><span class="p">],</span>
+        <span class="nx">tags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;html5&#39;</span><span class="p">,</span> <span class="s1">&#39;css3&#39;</span><span class="p">,</span> <span class="s1">&#39;js&#39;</span><span class="p">,</span> <span class="s1">&#39;MD&#39;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;phpyou&#39;</span><span class="p">,</span>
+        <span class="nx">site</span><span class="o">:</span> <span class="s1">&#39;https://phpyou.herokuapp.com/&#39;</span><span class="p">,</span>
+        <span class="nx">description</span><span class="o">:</span> <span class="p"></span><span class="s1">&#39;phpyou is a youtube dwonloader with just php.&#39;</span><span class="p">,</span>
+        <span class="nx">roles</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Developer&#39;</span><span class="p">],</span>
+        <span class="nx">tags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;php&#39;</span><span class="p">,</span> <span class="s1">&#39;yt-dl&#39;</span><span class="p">,</span> <span class="s1">&#39;youtube&#39;</span><span class="p">]</span>
+    <span class="p">},</span>
+<span class="p">];</span>
+
+<span class="c1">// Latest open source projects</span>
+<span class="kd">let</span> <span class="nx">openSource</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Leaders-Conclave-Web&#39;</span><span class="p">,</span>
+        <span class="nx">repository</span><span class="o">:</span> <span class="s1">&#39;https://github.com/alanbosco/Leaders-Conclave-Web&#39;</span><span class="p">,</span>
+        <span class="nx">roles</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Developer&#39;</span><span class="p">],</span>
+        <span class="nx">tags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;html5&#39;</span><span class="p">,</span> <span class="s1">&#39;css3&#39;</span><span class="p">,</span> <span class="s1">&#39;js&#39;</span><span class="p">,</span> <span class="s1">&#39;MD&#39;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;Kotlin-Sample-Programs&#39;</span><span class="p">,</span>
+        <span class="nx">repository</span><span class="o">:</span> <span class="s1">&#39;https://github.com/alanbosco/Kotlin-Sample-Programs&#39;</span><span class="p">,</span>
+        <span class="nx">roles</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Developer&#39;</span><span class="p">],</span>
+        <span class="nx">tags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Kotlin&#39;</span><span class="p">,</span> <span class="s1">&#39;app&#39;</span><span class="p">]</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;phpyou&#39;</span><span class="p">,</span>
+        <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;https://phpyou.herokuapp.com/&#39;</span><span class="p">,</span>
+        <span class="nx">repository</span><span class="o">:</span> <span class="s1">&#39;https://github.com/alanbosco/phpyou&#39;</span><span class="p">,</span>
+        <span class="nx">roles</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;Developer&#39;</span><span class="p">],</span>
+        <span class="nx">tags</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;php&#39;</span><span class="p">,</span> <span class="s1">&#39;yt-dl&#39;</span><span class="p">,</span> <span class="s1">&#39;youtube&#39;</span><span class="p">]</span>
+    <span class="p">}</span>
+<span class="p">];</span>
+
+<span class="nb">Object</span><span class="p">.</span><span class="nx">assign</span><span class="p">({},</span> <span class="nx">me</span><span class="p">,</span> <span class="nx">profiles</span><span class="p">,</span> <span class="p">{</span><span class="nx">currentPosition</span><span class="p">},</span><span class="p">{</span><span class="nx">openSource</span><span class="p">},</span> <span class="p">{</span><span class="nx">sideProjects</span><span class="p">})</span>
+</code></pre></div>
 </body>
 </html>
